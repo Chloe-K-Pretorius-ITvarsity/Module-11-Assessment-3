@@ -80,7 +80,6 @@
                 setActiveLink(category);
             }
             
-            //lesson 9 not working
             function fetchPosts(category){
                 fetch(rootPath + 'get-posts/?category=' + category)
                     .then(function(response){
@@ -90,7 +89,8 @@
                         displayPosts(data);
                 })
             }
-            
+
+            //Images won't load
             function displayPosts(data){
                 var output = "";
                 
